@@ -5,40 +5,40 @@ import React from "react"
  import TimelineConnector from '@material-ui/lab/TimelineConnector';
  import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-// import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
+import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
 
 import './Timeline.css'
-// import { Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
-const CustomTimeline = () => {
+const CustomTimeline = ({title, icon, children}) => {
     return (
-      
-            <Timeline>
-              <TimelineItem>
+            <Timeline className={'timeline'}>
+                {/* Item Header */}
+              <TimelineItem className={'timeline_firstItem'}>
                 <TimelineSeparator>
-                  <TimelineDot />
+                  <TimelineDot className={'timeline_dot_header'} > {<AirplanemodeActiveIcon/>}  </TimelineDot>  
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent>Eat</TimelineContent>
+                <TimelineContent><Typography variant="h6" className={'timeline_header'}>{title}</Typography></TimelineContent>
               </TimelineItem>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>Code</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot />
-                </TimelineSeparator>
-                <TimelineContent>Sleep</TimelineContent>
-              </TimelineItem>
-            </Timeline>
-          
-     );
+
+            {children}
+             {/* Remaining Item */}
+             </Timeline>
+    )
 }
 
+            export const CustomTimelineSeperator = () => (
+              <TimelineSeparator className={'separator_padding'}>
+                <TimelineDot variant={'outlined'} className={'timeline_dot'} />
+                <TimelineConnector />
+                 </TimelineSeparator>
+                
+          
+     );
+
+
+ 
 
 
 export default CustomTimeline
