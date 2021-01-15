@@ -12,30 +12,30 @@ import './Timeline.css'
 
 const CustomTimeline = () => {
     return (
-        <div>
-            Timeline
-        </div>
-//         <Timeline className={'timeline'}>
-//             {/* Item Header */}
-//           <TimelineItem >
-//             <TimelineSeparator className={'timeline_firstItem'}>
-//               <TimelineDot className={'timeline_dot_header'}> {AirplanemodeActiveIcon} </TimelineDot>
-//               <TimelineConnector />
-//             </TimelineSeparator>
-//             <TimelineContent><Typography variant="h6" className={'timeline_header'}></Typography></TimelineContent>
-//           </TimelineItem>
-
-         
-
-//            {/* Renaming Item */}
-//           <TimelineItem>
-//           <TimelineSeparator className={'seperator_padding'}>
-//     <TimelineDot className={'timeline_dot'}/>
-//     <TimelineConnector />
-//   </TimelineSeparator>
-//             <TimelineContent>Code</TimelineContent>
-//           </TimelineItem>
-//         </Timeline>
+      
+            <Timeline>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>Eat</TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>Code</TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                </TimelineSeparator>
+                <TimelineContent>Sleep</TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          
      );
 }
 
