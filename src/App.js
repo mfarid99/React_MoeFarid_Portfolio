@@ -14,7 +14,7 @@ function App() {
   return (
     <Container>
       <Grid container>
-        <Grid item xs={12} sm={12} lg={3} md={4}  style={{backgroundColor: 'blue'}}>
+        <Grid item xs={12} sm={12} lg={3} md={4} >
           <Profile />
         </Grid>
         <Grid item xs style = {{backgroundColor: 'red'}}>

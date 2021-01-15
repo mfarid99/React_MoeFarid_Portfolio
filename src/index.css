@@ -9,6 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+  overflow: hidden;
+  background: url("https://downloops.com/wp-content/uploads/edd/2016/11/CassandraGreen-Lively_Abstract_Lights_Motion_Background_Video_Loop_SampleStill.jpg");
 }
 
 code {
