@@ -16,7 +16,7 @@ const CustomTimeline = ({title, icon, children}) => {
                 {/* Item Header */}
               <TimelineItem className={'timeline_firstItem'}>
                 <TimelineSeparator>
-                  <TimelineDot className={'timeline_dot_header'} > {<AirplanemodeActiveIcon/>}  </TimelineDot>  
+                  <TimelineDot className={'timeline_dot_header'} > {icon}  </TimelineDot>  
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent><Typography variant="h6" className={'timeline_header'}>{title}</Typography></TimelineContent>
